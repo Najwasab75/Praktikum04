@@ -1,0 +1,261 @@
+/* PENGATURAN DASAR */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5dc;
+    color: #222222;
+    margin: 0;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* KOTAK UTAMA */
+.container {
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #fffef0;
+    border: 2px solid #c9c9a8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* JUDUL DAN KUTIPAN */
+#header {
+    background-color: #d9b77e;
+    border: 2px solid #ead6a5;
+    padding: 12px;
+    text-align: center;
+}
+
+#header h1 {
+    color: blue;
+    font-size: 27px;
+    margin: 0 0 12px;
+}
+
+blockquote {
+    background-color: #ffdf00;
+    border: 1px solid #d1b300;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+#soekarno {
+    font-weight: bold;
+}
+
+/* MENU NAVIGASI */
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 18px 0;
+}
+
+.menu a {
+    color: #594080;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* GAMBAR UTAMA */
+.gambar-burung {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.gambar-burung img {
+    width: 45%;
+    max-width: 320px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #d9b77e;
+    border-radius: 8px;
+}
+
+/* ARTIKEL */
+.artikel p {
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #292080;
+    font-size: 22px;
+    border-bottom: 2px solid #d9b77e;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #594080;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* TABEL INFORMASI */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin: 15px 0 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #9b875f;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #d9b77e;
+    color: #222;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5edda;
+}
+
+tbody tr:hover {
+    background-color: #fff2b3;
+}
+
+/* BAGIAN PROFIL DAN BETERNAK */
+#profil,
+#berternak,
+#tabel,
+.galeri {
+    margin-top: 25px;
+    scroll-margin-top: 15px;
+}
+
+#profil ul {
+    padding-left: 25px;
+}
+
+#berternak p {
+    text-align: justify;
+}
+
+/* GALERI GAMBAR */
+.koleksi {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.koleksi img {
+    width: 48%;
+    max-width: 300px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #d9b77e;
+}
+
+/* PROMOSI HARGA */
+.promo {
+    background-color: #fff1a8;
+    border: 2px solid #d9b77e;
+    padding: 15px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.promo strong {
+    color: #b22222;
+}
+
+/* FOOTER */
+footer {
+    background-color: #d9b77e;
+    color: #222;
+    text-align: center;
+    padding: 12px;
+    margin-top: 25px;
+    border-top: 2px solid #9b875f;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* TAMPILAN HP */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    .container {
+        margin: 5px auto;
+        padding: 8px;
+    }
+
+    #header {
+        padding: 9px 5px;
+    }
+
+    #header h1 {
+        font-size: 22px;
+    }
+
+    blockquote {
+        font-size: 11px;
+        padding: 7px;
+    }
+
+    .gambar-burung img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .koleksi img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    th,
+    td {
+        padding: 7px 5px;
+        font-size: 12px;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+}
+
