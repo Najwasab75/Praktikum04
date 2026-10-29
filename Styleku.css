@@ -1,0 +1,47 @@
+/* Mengatur tampilan seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: white;
+}
+
+/* Mengatur judul */
+h2 {
+    text-align: center;
+    color: #333333;
+}
+
+/* Membuat tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Membuat garis pada setiap kotak */
+th, td {
+    border: 1px solid #b7c9d3;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Memberi warna biru pada judul kolom */
+th {
+    background-color: #5b9bd5;
+    color: white;
+    text-align: center;
+}
+
+/* Memberi warna selang-seling pada baris */
+tbody tr:nth-child(even) {
+    background-color: #eaf2f8;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Membuat nomor lebih tegas */
+tbody td:first-child {
+    font-weight: bold;
+}
